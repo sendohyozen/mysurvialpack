@@ -83,3 +83,7 @@ a KM plot
 \description{
 Custom display of survival data, including plotting lines for median survival and adding number at risk
 }
+\examples{
+mySurvial::surv_plot2(surv.data = sur_data, time = 'days_to_last_follow_up', vital = 'vital_status', group = snp,
+            positive.lab = 'Dead', factor.Levels = c('wild', 'mutation'),
+}

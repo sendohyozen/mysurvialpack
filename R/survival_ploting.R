@@ -24,7 +24,7 @@
 #'                      positive.lab = 'Dead', factor.Levels = c('wild', 'mutation'))
 #'
 surv_plot1 = function(surv.data, time, vital, group, positive.lab, factor.Levels,
-                      title = '', x.lab = 'Time', y.lab = 'Survival probability',
+                      title = NULL, x.lab = 'Time', y.lab = 'Survival probability',
                       font.x = 15, font.y = 15, font.tickslab = 15, font.legend = 12,
                       risk.table = F, conf.int = F,
                       col = ggsci::pal_lancet(alpha = 0.8)(9)
@@ -105,7 +105,8 @@ surv_plot1 = function(surv.data, time, vital, group, positive.lab, factor.Levels
 #' @return  a KM plot
 #' @export
 #'
-#' @examples
+#' @examples mySurvial::surv_plot2(surv.data = sur_data, time = 'days_to_last_follow_up', vital = 'vital_status', group = snp,
+#'             positive.lab = 'Dead', factor.Levels = c('wild', 'mutation'),
 surv_plot2 <- function(surv.data, time, vital, group, positive.lab, factor.Levels,
                        main='',  xLab="OS (months)", yLab="Probability of survival",
                        cols,

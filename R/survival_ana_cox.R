@@ -8,7 +8,7 @@
 #' @return a vetor contain p value, HR, HR00.5, HR0.95
 #' @export
 #'
-#' @examples
+#' @examples getHRandCIfromCoxph(cox.fit)
 getHRandCIfromCoxph <- function(coxphData) {
 
     stopifnot(is(coxphData, "coxph"))

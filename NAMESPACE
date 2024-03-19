@@ -2,5 +2,6 @@
 
 export(getHRandCIfromCoxph)
 export(logrank_pv)
+export(surv_bestcutoff)
 export(surv_plot1)
 export(surv_plot2)
