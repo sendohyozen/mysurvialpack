@@ -9,9 +9,10 @@ surv_plot1(
   time,
   vital,
   group,
+  cutoff,
   positive.lab,
   factor.Levels,
-  title = "",
+  title = NULL,
   x.lab = "Time",
   y.lab = "Survival probability",
   font.x = 15,
@@ -31,6 +32,8 @@ surv_plot1(
 \item{vital}{colnames of vital status}
 
 \item{group}{colnames  var names as colnames}
+
+\item{cutoff}{group dividing for numeric var value; if a give optimized cutoff value is given, default median}
 
 \item{positive.lab}{positive label defines event occurs; such as 'Dead'}
 

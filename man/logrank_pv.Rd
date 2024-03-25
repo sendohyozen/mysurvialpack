@@ -4,7 +4,7 @@
 \alias{logrank_pv}
 \title{Geting P value using logrank from a dataframe with multiple varnames}
 \usage{
-logrank_pv(surv.data, time, vital, group, positive.lab, factor.Levels)
+logrank_pv(surv.data, time, vital, group, cutoff, positive.lab, factor.Levels)
 }
 \arguments{
 \item{surv.data}{a dataframe with multiple varnames: column: time, vital status, var names; row: samples}
@@ -14,6 +14,8 @@ logrank_pv(surv.data, time, vital, group, positive.lab, factor.Levels)
 \item{vital}{colnames of vital status}
 
 \item{group}{colnames  var names as colnames}
+
+\item{cutoff}{group dividing for numeric var value; if a give optimized cutoff value is given, default median}
 
 \item{positive.lab}{positive label defines event occurs; such as 'Dead'}
 
