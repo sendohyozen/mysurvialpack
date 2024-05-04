@@ -27,7 +27,7 @@ surv_bestcutoff(
 \item{minprop}{minimal proption to prevent unbanlanced grouping}
 }
 \value{
-a best cutoff surv fit object
+a best cutoff surv fit cutoff value
 }
 \description{
 Find the best cutoff threhold for a numeric var; if median grouping could not give a significant P value
